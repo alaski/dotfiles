@@ -42,14 +42,11 @@ def main(argv=None):
                     backup_all = True
 
             if overwrite or overwrite_all:
-                print 'unlink {0}'.format(link_name)
                 os.unlink(link_name)
             if backup or backup_all:
-                print 'mv {0} {0}.backup'.format(link_name)
                 shutil.move(link_name, '{0}.backup'.format(link_name))
 
         if not skip_all:
-            print 'symlink {0} {1}'.format(abs_linkable, link_name)
             os.symlink(abs_linkable, link_name)
 
     return 0
