@@ -1,1 +1,5 @@
+My version of dotfiles, inspired by https://github.com/holman/dotfiles.
+The python installation script logic was taken directly from the Rakefile
+in the above repo.
+
 usage: python install.py
