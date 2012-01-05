@@ -25,9 +25,9 @@ def main(argv=None):
         link_name = os.path.join(home, '.{0}'.format(filename))
         abs_linkable = os.path.join(os.getcwd(), linkable)
 
-        if os.path.isfile(link_name) or os.path.islink(link_name):
+        if os.path.isfile(link_name) or os.path.islink(link_name) or os.path.isdir(link_name):
             if not (skip_all or overwrite_all or backup_all):
-                action = raw_input('File already exists: {0}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all: '.format(link_name))
+                action = raw_input('File/Directory already exists: {0}, what do you want to do? [s]kip, [S]kip all, [o]verwrite, [O]verwrite all, [b]ackup, [B]ackup all: '.format(link_name))
                 if('s' == action):
                     continue
                 elif('S' == action):
