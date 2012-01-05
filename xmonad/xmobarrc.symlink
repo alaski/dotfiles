@@ -1,0 +1,15 @@
+Config { font = "xft:Bitstream Vera Sans Mono:size=9:bold:antialias=true"
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = TopW L 90
+       , lowerOnStart = False
+       , commands = [ Run MultiCpu ["-L","3","-H","50","--normal","green","--high","red"] 10
+                    , Run Wireless "wlan0" ["-L","0","-H","70","--normal","green","--high","red"] 10
+                    , Run Memory ["-t","Mem: <usedratio>%"] 10
+                    , Run Date "%a %b %_d %k:%M" "date" 10
+                    , Run StdinReader
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% }{ <fc=grey>%multicpu%</fc> <fc=grey> ~ %memory% ~ %wlan0wi%</fc> ~ <fc=#ee9a00>%date%</fc>"
+       }
