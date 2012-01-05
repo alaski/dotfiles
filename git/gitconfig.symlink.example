@@ -1,0 +1,19 @@
+# A sample config file with options I use
+# To use: rename to gitconfig.symlink and fill in your values
+
+[user]
+	name = Andrew Laski
+	email = <email>
+
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[color]
+	ui = auto
+[alias]
+	st = status
+	ci = commit
+	co = checkout
+	br = branch
+[github]
+	user = alaski
