@@ -10,4 +10,5 @@ fi
 export PATH=$PATH:$HOME/bin
 export SVN_EDITOR=vim
 export FIGNORE=.svn
+export LESS="-R"
 
