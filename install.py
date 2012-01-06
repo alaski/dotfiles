@@ -41,13 +41,14 @@ def main(argv=None):
                 elif('B' == action):
                     backup_all = True
 
+            if skip_all:
+                continue
             if overwrite or overwrite_all:
                 os.unlink(link_name)
             if backup or backup_all:
                 shutil.move(link_name, '{0}.backup'.format(link_name))
 
-        if not skip_all:
-            os.symlink(abs_linkable, link_name)
+        os.symlink(abs_linkable, link_name)
 
     return 0
 
