@@ -1,0 +1,23 @@
+account gmail
+host smtp.gmail.com
+port 587
+protocol smtp
+auth on
+from username@gmail.com
+user username@gmail.com
+password <password>
+tls on
+tls_nocertcheck
+
+account mailtrust
+host smtp.emailsrvr.com
+port 587
+protocol smtp
+auth on
+from <emailaddress>
+user <emailaddress>
+password <password>
+tls on
+tls_nocertcheck
+
+account default : mailtrust
