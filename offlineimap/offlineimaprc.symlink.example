@@ -35,7 +35,7 @@ nametrans = lambda folder: re.sub('^inbox$', 'INBOX',
 type = IMAP
 remotehost = secure.emailsrvr.com
 remoteport = 993
-remoteuser = alaski@mailtrust.com
-remotepass = uuahuvdr
+remoteuser = <email>
+remotepass = <password>
 
 # vim: ft=cfg tw=0
