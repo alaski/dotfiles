@@ -1,0 +1,13 @@
+# mailtrust specific options
+
+color status cyan default
+
+set from = "username@mailtrust.com"
+set sendmail = "/usr/bin/msmtp -a mailtrust"
+set mbox = "+Mailtrust/INBOX.Archive"
+set record = "+Mailtrust/INBOX.Sent"
+set postponed = "+Mailtrust/INBOX.Drafts"
+
+macro index E "<change-folder>+Mailtrust/INBOX.Archive<enter><limit>~B " "search everything"
+macro index D "<save-message>+Mailtrust/INBOX.Trash<enter>" "move message to the trash"
+macro index S "<save-message>+Mailtrust/INBOX.spam<enter>" "mark message as spam"

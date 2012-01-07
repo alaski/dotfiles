@@ -5,3 +5,7 @@ xmonad/xmonad.symlink/xmonad.hi
 xmonad/xmonad.symlink/xmonad.o
 offlineimap/offlineimaprc.symlink
 msmtp/msmtprc.symlink
+mutt/mutt.symlink/gmail.muttrc
+mutt/mutt.symlink/mailtrust.muttrc
+mutt/mutt.symlink/cache/headers/
+mutt/mutt.symlink/cache/bodies/
