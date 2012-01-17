@@ -1,1 +1,9 @@
-text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput
+text/html; mutt_bgrun google-chrome %s; nametemplate=%s.html;
+text/html; w3m -I %{charset} -T text/html; copiousoutput;
+#text/html; lynx -dump %s; nametemplate=%s.html; copiousoutput
+
+application/pdf; mutt_bgrun evince %s;
+application/pdf; pdftotext %s -; copiousoutput;
+
+image/*; mutt_bgrun eog %s;
+image/*; image2ascii %s; copiousoutput;

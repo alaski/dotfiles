@@ -77,8 +77,8 @@ unignore from: to: cc: date: subject:                           # show only thes
 hdr_order from: to: cc: date: subject:                          # and in this order
 
 # boxes
-mailboxes +GMail/INBOX +GMail/archive +GMail/sent +GMail/drafts +GMail/spam +GMail/trash
-mailboxes +Mailtrust/INBOX +Mailtrust/INBOX.Archive +Mailtrust/INBOX.Sent +Mailtrust/INBOX.Drafts +Mailtrust/INBOX.spam +Mailtrust/INBOX.Trash
+mailboxes +GMail/INBOX +GMail/drafts 
+mailboxes +Mailtrust/INBOX +Mailtrust/INBOX.Archive +Mailtrust/INBOX.Drafts
 
 # always sourced
 source $alias_file                                              # required for functionality
@@ -121,3 +121,7 @@ macro index P   "<pipe-message>cat > ~/"    "save message as"
 
 # quick-sync ~/Mail immediately with offlineimap
 macro index Z   "<shell-escape>/usr/bin/offlineimap -q -o<enter>" "sync IMAP"
+
+# use urlscan on message links
+macro pager \cb <pipe-entry>'urlscan'<enter> 'Follow links with urlscan'
+# -*-muttrc-*-
