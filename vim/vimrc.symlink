@@ -1,0 +1,44 @@
+filetype on
+filetype plugin on
+filetype indent on
+set backspace=2
+set tabstop=4
+set shiftwidth=4
+syntax on
+set modeline
+set foldmethod=marker
+set foldlevelstart=99
+"set nowrap
+set ruler
+set title
+set scrolloff=3
+"set textwidth=80
+
+"for case-smart searching
+"case sensitive only if Capital present
+set ignorecase
+set smartcase
+
+"Catch trailing whitespace
+set listchars=tab:>-,trail:.,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
+
+let mapleader = ","
+
+"set background=dark
+set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
+
+set wildmode=list:longest
+highlight Folded term=bold ctermbg=black ctermfg=white
+
+" Set the modeline for python files to keep whitespace consistent
+:autocmd BufNewFile *.py r ~/.vim/skeleton.py
+:autocmd BufNewFile *.py 1
+
+" Some tricks for mutt
+augroup MUTT
+	au BufRead ~/.mutt/temp/mutt* set spell " << vim 7 required
+	au BufRead ~/.mutt/temp/mutt* set tw=72
+	au BufRead ~/.mutt/temp/mutt* set noai
+	au BufRead ~/.mutt/temp/mutt* setfiletype mail
+augroup END
