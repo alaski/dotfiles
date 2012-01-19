@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 filetype on
 filetype plugin on
 filetype indent on
@@ -19,16 +21,28 @@ set scrolloff=3
 set ignorecase
 set smartcase
 
-"Catch trailing whitespace
-set listchars=tab:>-,trail:.,eol:$
-nmap <silent> <leader>s :set nolist!<CR>
-
 let mapleader = ","
+
+inoremap jj <ESC>
+
+" Use Q for formatting the current paragraph or selection
+vmap Q gq
+nmap Q gqap
+
+" Easier window navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+"set showmatch
+"set matchtime=5
 
 "set background=dark
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%)
 
 set wildmode=list:longest
+set wildignore=*.swp,*.pyc
 highlight Folded term=bold ctermbg=black ctermfg=white
 
 " Set the modeline for python files to keep whitespace consistent
