@@ -1,13 +1,16 @@
 # .bash_profile
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+if [ -f "~/.bashrc" ]; then
+	. "~/.bashrc"
 fi
 
 # User specific environment and startup programs
 
-export PATH=$PATH:$HOME/bin
+if [ -d "~/bin" ]; then
+	export PATH=$PATH:$HOME/bin
+fi
+
 export SVN_EDITOR=vim
 export FIGNORE=.svn
 export LESS=-R
