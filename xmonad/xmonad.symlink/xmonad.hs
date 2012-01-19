@@ -18,7 +18,7 @@ myWorkspaces = ["1:main","2:web","3","4:pandora","5:float","6","7","8","9"]
 
 myManageHook = composeAll
     [ className =? "MPlayer"        --> doFloat
-    , className =? "Gimp"           --> doFloat
+    , className =? "Gimp-2.6"       --> doFloat
     , className =? "Xfce4-appfinder"--> doFloat
     , className =? "Xfrun4"         --> doFloat
     , className =? "Google-chrome"  --> doShift "2"
