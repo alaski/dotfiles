@@ -11,3 +11,4 @@ mutt/mutt.symlink/cache/headers/
 mutt/mutt.symlink/cache/bodies/
 mutt/mutt.symlink/alias
 vim/vim.symlink/.netrwhist
+vim/vim.symlink/bundle/
