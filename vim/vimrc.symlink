@@ -11,7 +11,8 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'snipMate'
+Bundle 'scrooloose/syntastic'
+Bundle 'msanders/snipmate.vim'
 " vim-scripts repos
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
