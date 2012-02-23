@@ -63,9 +63,9 @@ set fast_reply                                                  # skip to compos
 set sendmail_wait       = -1                                    # don't wait for sending... to complete
 set askcc                                                       # ask for CC:
 set fcc_attach                                                  # save attachments with the body
-unset mime_forward                                              # forward attachments as part of body
+set mime_forward                                              # forward attachments as part of body
 set forward_format      = "Fwd: %s"                             # format for subject when forwarding
-set forward_decode                                              # decode when forwarding
+unset forward_decode                                            # don't decode when forwarding
 set attribution         = "On %d, %n wrote:"                    # set the attribution
 set reply_to                                                    # reply to Reply to: field
 set reverse_name                                                # reply as whomever it was to
@@ -78,8 +78,8 @@ unignore from: to: cc: date: subject:                           # show only thes
 hdr_order from: to: cc: date: subject:                          # and in this order
 
 # boxes
-mailboxes +GMail/INBOX +GMail/drafts 
-mailboxes +Mailtrust/INBOX +Mailtrust/INBOX.Archive +Mailtrust/INBOX.Drafts
+mailboxes +GMail/INBOX
+mailboxes +Mailtrust/INBOX +Mailtrust/INBOX.Archive +Mailtrust/INBOX.RackUSA
 
 # always sourced
 source $alias_file                                              # required for functionality
