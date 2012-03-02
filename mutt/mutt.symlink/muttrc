@@ -79,7 +79,7 @@ hdr_order from: to: cc: date: subject:                          # and in this or
 
 # boxes
 mailboxes +GMail/INBOX
-mailboxes +Mailtrust/INBOX +Mailtrust/INBOX.Archive +Mailtrust/INBOX.RackUSA
+mailboxes +Mailtrust/INBOX +Mailtrust/INBOX.Archive +Mailtrust/INBOX.RackUSA +Mailtrust/INBOX.Devel.CodeReviews +Mailtrust/INBOX.Devel.Tickets
 
 # always sourced
 source $alias_file                                              # required for functionality
