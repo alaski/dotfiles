@@ -5,6 +5,21 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+if [ -d "~/bin" ]; then
+	export PATH=$PATH:$HOME/bin
+fi
+
+export SVN_EDITOR=vim
+export FIGNORE=.svn
+export LESS=-R
+export EDITOR=vim
+export WORKON_HOME=$HOME/.virtualenvs
+export PIP_RESPECT_VIRTUALENV=true
+
+if [ -f "/usr/local/bin/virtualenvwrapper.sh" ]; then
+	source /usr/local/bin/virtualenvwrapper.sh
+fi
+
 # User specific aliases and functions
 alias ll='ls -l'
 alias la='ls -al'
