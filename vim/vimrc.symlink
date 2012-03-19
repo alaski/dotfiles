@@ -36,9 +36,11 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle command are not allowed..
 
 
+set expandtab
 set backspace=2
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 syntax on
 set modeline
 set foldmethod=marker
@@ -88,6 +90,8 @@ highlight Folded term=bold ctermbg=black ctermfg=white
 let g:syntastic_check_on_open = 1
 "let g:syntastic_enable_signs = 0
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
+"Less ugliness, courtesy of icgood
+highlight SignColumn ctermbg=darkgrey
 
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapWindowNavArrows = 1
