@@ -1,4 +1,4 @@
-import qualified Data.Map as M
+
 
 import System.IO
 import Graphics.X11.ExtraTypes.XF86
@@ -40,4 +40,5 @@ main = do
         }
     } `additionalKeys`
     [ ((mod4Mask, xK_p ), spawn "dmenu_run")
+    , ((mod1Mask .|. controlMask, xK_l), spawn "xscreensaver-command -lock")
     ]
