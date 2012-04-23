@@ -46,6 +46,7 @@ set modeline
 set foldmethod=marker
 set foldlevelstart=99
 "set nowrap
+set showcmd
 set ruler
 set title
 set scrolloff=3
@@ -123,6 +124,11 @@ if 'VIRTUAL_ENV' in os.environ:
 	activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
 	execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+augroup ruby
+    au!
+    au filetype ruby,eruby set sw=2 ts=2 sw=2 sts=2
+augroup END
 
 " Some tricks for mutt
 augroup MUTT

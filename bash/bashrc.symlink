@@ -25,3 +25,5 @@ alias ll='ls -l'
 alias la='ls -al'
 alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
