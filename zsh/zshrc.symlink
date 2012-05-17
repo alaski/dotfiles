@@ -81,3 +81,4 @@ PROMPT="$(user_host) $(current_dir) $(trailer) "
 RPROMPT='${vcs_info_msg_0_}$(return_code)'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
