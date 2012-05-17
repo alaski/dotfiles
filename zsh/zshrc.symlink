@@ -12,7 +12,7 @@ setopt APPEND_HISTORY
 
 unsetopt BEEP
 unsetopt MENU_COMPLETE
-setopt BASH_AUTO_LIST
+#setopt BASH_AUTO_LIST
 setopt PROMPT_SUBST
 
 bindkey -v
