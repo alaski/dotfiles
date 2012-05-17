@@ -66,7 +66,7 @@ set fcc_attach                                                  # save attachmen
 set mime_forward        = ask-no                                # forward attachments as part of body
 unset mime_forward_decode
 set forward_format      = "Fwd: %s"                             # format for subject when forwarding
-set forward_decode                                            # don't decode when forwarding
+set forward_decode                                              # don't decode when forwarding
 set attribution         = "On %d, %n wrote:"                    # set the attribution
 set reply_to                                                    # reply to Reply to: field
 set reverse_name                                                # reply as whomever it was to
