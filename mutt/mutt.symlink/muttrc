@@ -72,6 +72,7 @@ set reply_to                                                    # reply to Reply
 set reverse_name                                                # reply as whomever it was to
 set include                                                     # include message in replies
 set forward_quote                                               # include message in forwards
+set text_flowed         = yes                                   # format=flowed for clients
 
 # headers to show
 ignore *                                                        # ignore all headers
