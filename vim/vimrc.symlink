@@ -137,8 +137,9 @@ augroup END
 
 " Some tricks for mutt
 augroup MUTT
-	au BufRead ~/.mutt/temp/mutt* set spell " << vim 7 required
-	au BufRead ~/.mutt/temp/mutt* set tw=72
-	au BufRead ~/.mutt/temp/mutt* set noai
-	au BufRead ~/.mutt/temp/mutt* setfiletype mail
+    au BufRead ~/.mutt/temp/mutt* set spell " << vim 7 required
+    au BufRead ~/.mutt/temp/mutt* set tw=72
+    au BufRead ~/.mutt/temp/mutt* set fo+=w
+    au BufRead ~/.mutt/temp/mutt* set noai
+    au BufRead ~/.mutt/temp/mutt* setfiletype mail
 augroup END
