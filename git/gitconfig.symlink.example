@@ -17,3 +17,5 @@
 	br = branch
 [github]
 	user = alaski
+[push]
+	default = current
