@@ -2,20 +2,22 @@
 # To use: rename to gitconfig.symlink and fill in your values
 
 [user]
-	name = Andrew Laski
-	email = <email>
+    name = Andrew Laski
+    email = <email>
 
 [core]
-	editor = vim
-	excludesfile = ~/.gitignore
+    editor = vim
+    excludesfile = ~/.gitignore
 [color]
-	ui = auto
+    ui = auto
 [alias]
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [github]
-	user = alaski
+    user = alaski
 [push]
-	default = current
+    default = current
