@@ -52,7 +52,7 @@ eval "$(rbenv init -)"
 # User specific aliases and functions
 alias ll='ls -l'
 alias la='ls -al'
-alias ls='ls -G'
+alias ls='ls --color=auto'
 alias grep='grep --colour=auto'
 alias ack='ack-grep'
 
