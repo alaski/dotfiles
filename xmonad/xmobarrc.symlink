@@ -3,7 +3,7 @@ Config { font = "xft:Bitstream Vera Sans Mono:size=9:bold:antialias=true"
        , fgColor = "grey"
        , position = Top
        , lowerOnStart = False
-       , commands = [ Run MultiCpu ["-t","Cpu: <total>","-L","3","-H","50","--normal","green","--high","red"] 10
+       , commands = [ Run MultiCpu ["-t","Cpu: <autototal>","-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Network "wlan0" ["-L","0","-H","70","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Date "%a %b %_d %k:%M" "date" 10
