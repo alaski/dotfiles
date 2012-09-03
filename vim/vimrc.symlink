@@ -54,9 +54,9 @@ set scrolloff=3
 set viminfo='10,\"100
 
 " Included for those systems that don't have them set
-"if has("autocmd")
-"  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-"endif
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
 
 "for case-smart searching
 "case sensitive only if Capital present
