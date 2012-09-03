@@ -39,6 +39,6 @@ main = do
         , ppLayout = const "" -- to disable the layout info on xmobar
         }
     } `additionalKeys`
-    [ ((mod4Mask, xK_p ), spawn "dmenu_run")
+    [ ((mod4Mask, xK_p), spawn "dmenu_run")
     , ((mod1Mask .|. controlMask, xK_l), spawn "xscreensaver-command -lock")
     ]
