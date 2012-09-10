@@ -3,7 +3,8 @@ Config { font = "xft:Bitstream Vera Sans Mono:size=9:bold:antialias=true"
        , fgColor = "grey"
        , position = Top
        , lowerOnStart = False
-       , commands = [ Run MultiCpu ["-t","Cpu: <autototal>","-L","3","-H","50","--normal","green","--high","red"] 10
+       , commands = [ Run CommandReader "/home/alaski/bin/vpn_status.sh" "VPN"
+                    , Run MultiCpu ["-t","Cpu: <autototal>","-L","3","-H","50","--normal","green","--high","red"] 10
                     , Run Network "wlan0" ["-L","0","-H","70","--normal","green","--high","red"] 10
                     , Run Memory ["-t","Mem: <usedratio>%"] 10
                     , Run Date "%a %b %_d %k:%M" "date" 10
@@ -11,5 +12,5 @@ Config { font = "xft:Bitstream Vera Sans Mono:size=9:bold:antialias=true"
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ <fc=grey>%multicpu%</fc> <fc=grey> ~ %memory% ~ %wlan0%</fc> ~ <fc=#ee9a00>%date%</fc>"
+       , template = "%StdinReader% }{ <fc=grey>%multicpu%</fc> <fc=grey> ~ %memory% ~ <fc=red>%VPN%</fc> %wlan0%</fc> ~ <fc=#ee9a00>%date%</fc>"
        }
