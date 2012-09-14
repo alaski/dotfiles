@@ -16,8 +16,8 @@ Bundle 'msanders/snipmate.vim'
 "Bundle 'kevinw/pyflakes-vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'tpope/vim-fugitive.git'
+Bundle 'majutsushi/tagbar'
 " vim-scripts repos
-Bundle 'taglist.vim'
 "Bundle 'L9'
 "Bundle 'FuzzyFinder'
 " non github repos
@@ -66,6 +66,8 @@ set smartcase
 let mapleader = ","
 
 inoremap jj <ESC>
+
+nmap <F8> :TagbarToggle<CR>
 
 " Use Q for formatting the current paragraph or selection
 vmap Q gq
