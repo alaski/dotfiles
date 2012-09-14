@@ -103,9 +103,9 @@ let g:miniBufExplModSelTarget = 1
 
 " :r!which google-chrome
 " :r!which ghc
-let g:haddock_browser = "/usr/bin/google-chrome"
-let g:ghc = "/usr/bin/ghc"
-au BufEnter *.hs compiler ghc
+" let g:haddock_browser = "/usr/bin/google-chrome"
+" let g:ghc = "/usr/bin/ghc"
+" au BufEnter *.hs compiler ghc
 
 " Set the modeline for python files to keep whitespace consistent
 :autocmd BufNewFile *.py r ~/.vim/skeleton.py
