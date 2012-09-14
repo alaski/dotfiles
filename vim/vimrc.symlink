@@ -108,8 +108,8 @@ let g:miniBufExplModSelTarget = 1
 " au BufEnter *.hs compiler ghc
 
 " Set the modeline for python files to keep whitespace consistent
-:autocmd BufNewFile *.py r ~/.vim/skeleton.py
-:autocmd BufNewFile *.py 1
+" :autocmd BufNewFile *.py r ~/.vim/skeleton.py
+" :autocmd BufNewFile *.py 1
 
 "au FileType python set omnifunc=pythoncomplete#Complete
 "set completeopt=menuone,longest,preview
