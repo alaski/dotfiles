@@ -13,16 +13,11 @@ Bundle 'gmarik/vundle'
 " original repos on github
 Bundle 'scrooloose/syntastic'
 Bundle 'msanders/snipmate.vim'
-"Bundle 'kevinw/pyflakes-vim'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'tpope/vim-fugitive.git'
 Bundle 'majutsushi/tagbar'
 " vim-scripts repos
-"Bundle 'L9'
-"Bundle 'FuzzyFinder'
-" non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
-" ...
+Bundle 'xterm16.vim'
 
 filetype plugin indent on     " required! 
 "
@@ -34,6 +29,15 @@ filetype plugin indent on     " required!
 "
 " see :h vundle for more details or wiki for FAQ
 " NOTE: comments after Bundle command are not allowed..
+
+au VimEnter *
+       \ if &term == 'xterm'  |
+       \         set t_Co=256 |
+       \ endif
+
+" let xterm16_brightness='default' " Change if needed
+let xterm16_colormap='soft'   " Change if needed
+colo xterm16
 
 
 set expandtab
