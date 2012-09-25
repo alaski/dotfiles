@@ -39,6 +39,15 @@ au VimEnter *
 let xterm16_colormap='soft'   " Change if needed
 colo xterm16
 
+" -----------------------------------------------------------------------------
+" Color Column (only on insert)
+" -----------------------------------------------------------------------------
+if exists("&colorcolumn")
+    autocmd InsertEnter * set colorcolumn=80
+    autocmd InsertLeave * set colorcolumn=""
+    " colo xterm16 prevents this from working, set it in the colorscheme
+    " highlight ColorColumn ctermbg=grey
+endif
 
 set expandtab
 set backspace=2
