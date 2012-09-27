@@ -38,6 +38,10 @@ if [ -d "$HOME/.rbenv/bin:$PATH" ]; then
     export PATH="$HOME/.rbenv/bin:$PATH"
     eval "$(rbenv init -)"
 fi
+if [ -d "/usr/local/go/bin" ]; then
+    export PATH=$PATH:/usr/local/go/bin:$HOME/mygo/bin
+    export GOPATH=$HOME/mygo
+fi
 
 export SVN_EDITOR=vim
 export FIGNORE=.svn
