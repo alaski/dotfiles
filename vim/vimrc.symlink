@@ -106,6 +106,7 @@ highlight Folded term=bold ctermbg=black ctermfg=white
 
 let g:syntastic_check_on_open = 1
 "let g:syntastic_enable_signs = 0
+let g:syntastic_python_checker_args='--ignore=E12'
 let g:syntastic_stl_format = '[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]'
 "Less ugliness, courtesy of icgood
 highlight SignColumn ctermbg=darkgrey
