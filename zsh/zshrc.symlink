@@ -43,8 +43,6 @@ if [ -d "/usr/local/go/bin" ]; then
     export GOPATH=$HOME/mygo
 fi
 
-export SVN_EDITOR=vim
-export FIGNORE=.svn
 export LESS=-R
 export EDITOR=vim
 export WORKON_HOME=$HOME/.virtualenvs
