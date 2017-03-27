@@ -132,7 +132,7 @@ let g:miniBufExplModSelTarget = 1
 
 " Add the virtualenv's site-packages to vim path
 " Requires python scripting support in vim
-py << EOF
+py3 << EOF
 import os.path
 import sys
 import vim
