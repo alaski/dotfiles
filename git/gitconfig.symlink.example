@@ -15,6 +15,7 @@
     ci = commit
     co = checkout
     br = branch
+    brt = for-each-ref --sort='-authordate' --format='%(color:green)%(authordate:relative)%09%(color:blue)%(objectname:short)%09%(color:reset)%(refname:strip=2)' refs/heads
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [github]
